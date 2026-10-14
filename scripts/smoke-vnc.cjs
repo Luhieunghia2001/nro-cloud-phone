@@ -1,7 +1,7 @@
 const BASE = "http://127.0.0.1:8787";
 const WS = "ws://127.0.0.1:8787";
-const USER = "admin";
-const PASS = "AdminPass123!";
+const USER = process.env.SMOKE_USER || "admin";
+const PASS = process.env.SMOKE_PASS || "change-me";
 
 function req(path, init = {}, cookie = "") {
   return fetch(`${BASE}${path}`, {

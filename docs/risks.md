@@ -7,7 +7,7 @@
 - Còn lại: trên nnx64, dialog "Xin chờ" đứng im còn do RMS `vjacc/vjpass` trống (chưa nhập tài khoản) — không còn quan trọng vì đã đổi runtime.
 
 ## R1b — Tài khoản game trong RMS của KE 0.9.8 [MỨC: THẤP]
-- Menu game hiện tài khoản `0376103013` (từ RMS sẵn của người dùng). Website **không lưu mật khẩu game** — người dùng tự nhập trong game qua VNC (Giai đoạn 3).
+- Menu game hiện tài khoản từ RMS sẵn của người dùng (đã ẩn). Website **không lưu mật khẩu game** — người dùng tự nhập trong game qua VNC (Giai đoạn 3).
 - Hành động: giữ nguyên, không động vào RMS của người dùng.
 - Bằng chứng: `docs/phase1-environment-report.md` §2–§3.
 - Giả thuyết: server kiểm tra cập nhật `dragonball.indonaga.com` timeout.

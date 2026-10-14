@@ -16,7 +16,7 @@ Ngày thực nghiệm: 14/10/2026 ~19:57. Môi trường: Windows 10 + Node v24.
 
 ## 2. Smoke-test thực tế (14/10 ~19:57, worker + backend cùng chạy)
 
-- `POST /api/auth/login` (admin/AdminPass123!) → 200 + cookie HttpOnly. `/api/me` → đúng user.
+- `POST /api/auth/login` (admin/`<ADMIN_PASSWORD trong .env>`) → 200 + cookie HttpOnly. `/api/me` → đúng user.
 - `POST /api/sessions` → tạo `NRO Phone 1` (runtime `kemulator-0.9.8`). `GET /api/sessions` → trạng thái thật từ worker.
 - `POST .../stop` → game tắt (PID 7188 biến mất, worker `STOPPED`).
 - `POST .../start` → game mở lại (**PID 6512**, `RUNNING`/`UNVERIFIED`, cửa sổ `KEmulator Lite v0.9.8` Responding=True).

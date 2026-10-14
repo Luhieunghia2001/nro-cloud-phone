@@ -17,10 +17,10 @@ Ngày thực nghiệm: 14/10/2026 ~19:06. Môi trường: Windows 10 + Node v24.
 Chuỗi **Frontend (5173) → proxy /api → Backend (8787) → Worker (47821) → KEmulator 0.9.8**:
 
 - `GET /api/health` (qua proxy) → 200.
-- `POST /api/auth/login` (admin/AdminPass123!) → 200 + cookie HttpOnly.
+- `POST /api/auth/login` (admin/`<ADMIN_PASSWORD trong .env>`) → 200 + cookie HttpOnly.
 - `GET /api/sessions` → trạng thái thật từ worker: `RUNNING`, PID 6512, `gameConnection=UNVERIFIED`, đúng events (tạo/stop/start).
 - Vite dev server bind `::1:5173` — test bằng `http://[::1]:5173` (IPv4 127.0.0.1 không tới, đây là đặc thù Vite dev, không phải lỗi code).
-- Ảnh trạng thái thật lúc smoke-test: `runtime/logs/frontend-e2e-game.png` — game ở menu đăng nhập render đúng (tài khoản `0376103013`, "Máy chủ: Vũ trụ 1"), nên `UNVERIFIED` là trung thực (chưa vào nhân vật).
+- Ảnh trạng thái thật lúc smoke-test: `runtime/logs/frontend-e2e-game.png` (đã gitignore, không public) — game ở menu đăng nhập render đúng ("Máy chủ: Vũ trụ 1"), nên `UNVERIFIED` là trung thực (chưa vào nhân vật).
 
 ## 3. Việc tiếp theo
 
