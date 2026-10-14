@@ -1,0 +1,10 @@
+{
+  "name": "@nro/shared",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "main": "./types.ts",
+  "exports": {
+    ".": "./types.ts"
+  }
+}

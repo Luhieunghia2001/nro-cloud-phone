@@ -1,0 +1,23 @@
+:root { color-scheme: light dark; font-family: system-ui, sans-serif; }
+body { margin: 0; background: #0e1116; color: #e8eaf0; }
+.wrap { max-width: 720px; margin: 0 auto; padding: 24px 16px 64px; }
+.top { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+.card { background: #171c25; border: 1px solid #2a3342; border-radius: 12px; padding: 16px; margin: 16px 0; }
+.row { display: flex; gap: 8px; margin: 8px 0; flex-wrap: wrap; }
+button { background: #2b6cb0; color: #fff; border: 0; border-radius: 8px; padding: 8px 14px; cursor: pointer; }
+button:disabled { opacity: 0.5; cursor: default; }
+button.active { background: #2f855a; }
+label { display: block; margin: 8px 0; }
+input { display: block; width: 100%; margin-top: 4px; padding: 8px; border-radius: 8px; border: 1px solid #2a3342; background: #0e1116; color: inherit; }
+.muted { color: #9aa3b2; }
+.small { font-size: 12px; }
+.err { color: #ff8a8a; }
+.ok { color: #68d391; }
+.warn { color: #fbd38d; }
+details { margin-top: 8px; }
+ul { padding-left: 20px; }
+canvas.screen { width: 240px; max-width: 100%; image-rendering: pixelated; border: 1px solid #2a3342; border-radius: 8px; margin-top: 8px; background: #000; cursor: crosshair; }
+.badge { font-size: 12px; padding: 2px 8px; border-radius: 999px; background: #2a3342; }
+.badge.live { background: #2f855a; color: #fff; }
+.badge.error { background: #9b2c2c; color: #fff; }
+.badge.connecting { background: #975a16; color: #fff; }

@@ -1,0 +1,17 @@
+node_modules/
+dist/
+data/
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+.env
+runtime/logs/
+runtime/games/
+runtime/kemulator/
+runtime/*.zip
+frontend/dist/
+backend/dist/
+worker/dist/
+*.log
+.DS_Store
+Thumbs.db
